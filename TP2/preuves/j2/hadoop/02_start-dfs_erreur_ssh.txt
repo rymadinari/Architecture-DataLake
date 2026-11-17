@@ -1,0 +1,8 @@
+$ start-dfs.sh   (17/11/2026 13:24:59)
+Starting namenodes on [localhost]
+localhost: ssh: connect to host localhost port 22: Connection refused
+Starting datanodes
+localhost: ssh: connect to host localhost port 22: Connection refused
+Starting secondary namenodes [rymadinari-VivoBook-ASUSLaptop-M1702QA-M1702QA]
+rymadinari-VivoBook-ASUSLaptop-M1702QA-M1702QA: ssh: connect to host rymadinari-vivobook-asuslaptop-m1702qa-m1702qa port 22: Connection refused
+code retour : 0

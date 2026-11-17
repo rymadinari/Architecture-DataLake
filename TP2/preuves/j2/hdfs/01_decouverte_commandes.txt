@@ -1,0 +1,41 @@
+=== Étape 2 – Découverte des commandes HDFS (17/11/2026 13:25:53) ===
+
+$ hdfs dfsadmin -safemode get
+Safe mode is OFF
+(code retour 0)
+
+$ hdfs dfs -ls /
+(code retour 0)
+
+$ hdfs dfs -ls /retail-lake
+ls: `/retail-lake': No such file or directory
+(code retour 1)
+
+$ hdfs dfs -mkdir -p /retail-lake
+(code retour 0)
+
+$ hdfs dfs -ls /
+Found 1 items
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:25 /retail-lake
+(code retour 0)
+
+$ hdfs dfs -ls -d /retail-lake
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:25 /retail-lake
+(code retour 0)
+
+$ hdfs dfs -stat %u %g %A %n /retail-lake
+rymadinari supergroup rwxr-xr-x retail-lake
+(code retour 0)
+
+$ hdfs dfs -du -h /retail-lake
+(code retour 0)
+
+$ hdfs dfs -df -h /
+Filesystem                Size  Used  Available  Use%
+hdfs://localhost:9000  136.2 G  24 K     37.4 G    0%
+(code retour 0)
+
+$ hdfs dfs -count -q -h /retail-lake
+        none             inf            none             inf            1            0                  0 /retail-lake
+(code retour 0)
+

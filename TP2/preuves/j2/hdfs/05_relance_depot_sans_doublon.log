@@ -1,0 +1,74 @@
+=== Dépôt HDFS du 17/11/2026 13:44:33 par rymadinari ===
+
+--- 1. Arborescence du Data Lake ---
+$ hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/initial
+$ hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/refresh
+$ hdfs dfs -mkdir -p /retail-lake/raw/nifi
+$ hdfs dfs -mkdir -p /retail-lake/bronze/tpcxbb
+$ hdfs dfs -mkdir -p /retail-lake/silver
+$ hdfs dfs -mkdir -p /retail-lake/gold
+$ hdfs dfs -mkdir -p /retail-lake/quality
+$ hdfs dfs -mkdir -p /retail-lake/logs
+
+--- 2. Dépôt des fichiers (un dossier par table) ---
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/customer_address/customer_address.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/customer/customer.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/customer_demographics/customer_demographics.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/date_dim/date_dim.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/household_demographics/household_demographics.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/income_band/income_band.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/inventory/inventory.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/item/item.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/item_marketprices/item_marketprices.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/product_reviews/product_reviews.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/promotion/promotion.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/reason/reason.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/ship_mode/ship_mode.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/store_returns/store_returns.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/store_sales/store_sales.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/store/store.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/time_dim/time_dim.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/warehouse/warehouse.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/web_clickstreams/web_clickstreams.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/web_page/web_page.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/web_returns/web_returns.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/web_sales/web_sales.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/initial/web_site/web_site.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/customer_address/customer_address.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/customer/customer.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/inventory/inventory.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/item/item.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/item_marketprices/item_marketprices.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/product_reviews/product_reviews.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/store_returns/store_returns.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/store_sales/store_sales.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/web_clickstreams/web_clickstreams.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/web_returns/web_returns.dat
+DEJA PRESENT (pas d'écrasement) : /retail-lake/raw/tpcxbb/refresh/web_sales/web_sales.dat
+
+--- 3. Résultat ---
+$ hdfs dfs -ls -R /retail-lake | head
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/bronze
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/bronze/tpcxbb
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/gold
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/logs
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/quality
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:41 /retail-lake/raw/nifi
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:41 /retail-lake/raw/nifi/refresh
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:41 /retail-lake/raw/nifi/refresh/store_sales
+-rw-r--r--   1 rymadinari supergroup     922171 2026-11-17 13:41 /retail-lake/raw/nifi/refresh/store_sales/store_sales.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:41 /retail-lake/raw/nifi/refresh/web_returns
+-rw-r--r--   1 rymadinari supergroup      55952 2026-11-17 13:41 /retail-lake/raw/nifi/refresh/web_returns/web_returns.dat
+-rw-r--r--   1 rymadinari supergroup       3386 2026-11-17 13:38 /retail-lake/raw/nifi/store.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer
+-rw-r--r--   1 rymadinari supergroup   13279063 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer/customer.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_address
+-rw-r--r--   1 rymadinari supergroup    5387229 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_address/customer_address.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_demographics
+$ hdfs dfs -du -h /retail-lake/raw/tpcxbb
+977.0 M  977.0 M  /retail-lake/raw/tpcxbb/initial
+9.0 M    9.0 M    /retail-lake/raw/tpcxbb/refresh
+=== Fin 13:46:10 ===

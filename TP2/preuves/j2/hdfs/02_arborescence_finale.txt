@@ -1,0 +1,60 @@
+=== Arborescence finale du Data Lake (17/11/2026 13:46:18) ===
+$ hdfs dfs -ls -R /retail-lake | grep '^d'   (répertoires)
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/bronze
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/bronze/tpcxbb
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/gold
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/logs
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/quality
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:41 /retail-lake/raw/nifi
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:41 /retail-lake/raw/nifi/refresh
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:41 /retail-lake/raw/nifi/refresh/store_sales
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:41 /retail-lake/raw/nifi/refresh/web_returns
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_address
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_demographics
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/date_dim
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/household_demographics
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/income_band
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/inventory
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/item
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/item_marketprices
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/product_reviews
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/promotion
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/reason
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/ship_mode
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/store
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/store_returns
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/store_sales
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/time_dim
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/warehouse
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/web_clickstreams
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/web_page
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/web_returns
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/web_sales
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/web_site
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/customer
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:27 /retail-lake/raw/tpcxbb/refresh/customer_address
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/inventory
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/item
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/item_marketprices
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/product_reviews
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/store_returns
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/store_sales
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/web_clickstreams
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/web_returns
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh/web_sales
+drwxr-xr-x rymadinari supergroup 2026-11-17 13:26 /retail-lake/silver
+
+$ hdfs dfs -du -h /retail-lake /retail-lake/raw
+0        0        /retail-lake/bronze
+0        0        /retail-lake/gold
+0        0        /retail-lake/logs
+0        0        /retail-lake/quality
+986.9 M  986.9 M  /retail-lake/raw
+0        0        /retail-lake/silver
+958.5 K  958.5 K  /retail-lake/raw/nifi
+985.9 M  985.9 M  /retail-lake/raw/tpcxbb

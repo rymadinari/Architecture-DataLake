@@ -1,0 +1,10 @@
+Démarrage sans SSH (17/11/2026 13:25:13)
+$ hdfs --daemon start namenode
+$ hdfs --daemon start datanode
+$ hdfs --daemon start secondarynamenode
+
+$ jps
+329892 SecondaryNameNode
+329746 DataNode
+329666 NameNode
+330287 Jps

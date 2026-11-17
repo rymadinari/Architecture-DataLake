@@ -1,0 +1,68 @@
+=== Étape 5 – Contrôles complémentaires (17/11/2026 13:30:27) ===
+
+## Présence des répertoires attendus
+$ hdfs dfs -ls /retail-lake /retail-lake/raw /retail-lake/raw/tpcxbb
+Found 6 items
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/bronze
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/gold
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/logs
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/quality
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/silver
+Found 2 items
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/nifi
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb
+Found 2 items
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:28 /retail-lake/raw/tpcxbb/refresh
+(code retour 0)
+
+$ hdfs dfs -count -h /retail-lake/raw/tpcxbb/initial /retail-lake/raw/tpcxbb/refresh
+          24           23            977.0 M /retail-lake/raw/tpcxbb/initial
+          12           11              9.0 M /retail-lake/raw/tpcxbb/refresh
+(code retour 0)
+
+## Fichier déposé, taille, permissions
+$ hdfs dfs -ls -h /retail-lake/raw/tpcxbb/initial/store_sales
+Found 1 items
+-rw-r--r--   1 rymadinari supergroup     88.5 M 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial/store_sales/store_sales.dat
+(code retour 0)
+
+$ hdfs dfs -stat "owner=%u group=%g perms=%A replication=%r blocksize=%o size=%b modified=%y" /retail-lake/raw/tpcxbb/initial/store_sales/store_sales.dat
+owner=rymadinari group=supergroup perms=rw-r--r-- replication=1 blocksize=134217728 size=92764700 modified=2026-11-17 13:27:24
+(code retour 0)
+
+## Lecture contrôlée (3 premières lignes)
+$ hdfs dfs -cat /retail-lake/raw/tpcxbb/initial/store/store.dat | head -3 | cut -c1-120
+0|AAAAAAAAAAAAAAAA|2000-08-02||71238|Forest|217|8891512|8AM-12AM|Joshua Watson|6|Unknown|realms sublate quickly outside 
+1|AAAAAAAAAAAAAAAB|2000-07-03||18994|Hillside|244|8751339|8AM-4PM|Gary Gold|3|Unknown|close escapades across the careful
+2|AAAAAAAAAAAAAAAC|2000-09-01||8900|Sherwood|266|5913334|8AM-4PM|James Anderson|6|Unknown|frays may kindle over the bold
+
+## Nombre de lignes : local vs HDFS (store_sales)
+$ wc -l < local ; hdfs dfs -cat ... | wc -l
+local : 667579   hdfs : 667579
+
+## Récupération contrôlée (-get) puis comparaison octet par octet
+$ hdfs dfs -get /retail-lake/raw/tpcxbb/initial/store_sales/store_sales.dat /tmp/claude-1000/-home-rymadinari-TP1/ab85b05b-30ef-499d-9af1-55fe22cfc655/scratchpad/store_sales_recupere.dat
+(code retour 0)
+
+$ cmp /home/rymadinari/TP1/retail_project/data/store_sales/store_sales.dat /tmp/claude-1000/-home-rymadinari-TP1/ab85b05b-30ef-499d-9af1-55fe22cfc655/scratchpad/store_sales_recupere.dat
+(code retour 0)
+
+(cmp n'affiche rien et renvoie 0 : les deux fichiers sont identiques)
+
+## Somme de contrôle calculée par HDFS (format propre à HDFS, non comparable à un sha256 local)
+$ hdfs dfs -checksum /retail-lake/raw/tpcxbb/initial/store_sales/store_sales.dat
+/retail-lake/raw/tpcxbb/initial/store_sales/store_sales.dat	MD5-of-0MD5-of-512CRC32C	000002000000000000000000cb3d39d54ed8213ba08dfa4be2768183
+(code retour 0)
+
+## La source originale est conservée
+$ ls -l /home/rymadinari/TP1/retail_project/data/store_sales/store_sales.dat
+-rw-rw-rw- 1 rymadinari rymadinari 92764700 nov.  15 23:34 /home/rymadinari/TP1/retail_project/data/store_sales/store_sales.dat
+(code retour 0)
+
+## Taille totale
+$ hdfs dfs -du -s -h /retail-lake
+985.9 M  985.9 M  /retail-lake
+(code retour 0)
+

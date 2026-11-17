@@ -1,0 +1,69 @@
+=== CO-01 – Blocs et réplication (17/11/2026 13:30:55) ===
+
+$ hdfs fsck /retail-lake/raw/tpcxbb/initial/inventory/inventory.dat -files -blocks -locations
+FSCK started by rymadinari (auth:SIMPLE) from /127.0.0.1 for path /retail-lake/raw/tpcxbb/initial/inventory/inventory.dat at Tue Nov 17 13:30:56 CET 2026
+/retail-lake/raw/tpcxbb/initial/inventory/inventory.dat 424943678 bytes, replicated: replication=1, 4 block(s):  OK
+0. BP-1556984630-127.0.1.1-1794918299326:blk_1073741831_1007 len=134217728 Live_repl=1  [DatanodeInfoWithStorage[127.0.0.1:9866,DS-beb4733e-7d7b-4d1b-9a39-7b46812c8dc0,DISK]]
+1. BP-1556984630-127.0.1.1-1794918299326:blk_1073741832_1008 len=134217728 Live_repl=1  [DatanodeInfoWithStorage[127.0.0.1:9866,DS-beb4733e-7d7b-4d1b-9a39-7b46812c8dc0,DISK]]
+2. BP-1556984630-127.0.1.1-1794918299326:blk_1073741833_1009 len=134217728 Live_repl=1  [DatanodeInfoWithStorage[127.0.0.1:9866,DS-beb4733e-7d7b-4d1b-9a39-7b46812c8dc0,DISK]]
+3. BP-1556984630-127.0.1.1-1794918299326:blk_1073741834_1010 len=22290494 Live_repl=1  [DatanodeInfoWithStorage[127.0.0.1:9866,DS-beb4733e-7d7b-4d1b-9a39-7b46812c8dc0,DISK]]
+Status: HEALTHY
+ Number of data-nodes:	1
+ Number of racks:		1
+ Total dirs:			0
+ Total symlinks:		0
+Replicated Blocks:
+ Total size:	424943678 B
+ Total files:	1
+ Total blocks (validated):	4 (avg. block size 106235919 B)
+ Minimally replicated blocks:	4 (100.0 %)
+ Over-replicated blocks:	0 (0.0 %)
+ Under-replicated blocks:	0 (0.0 %)
+ Mis-replicated blocks:		0 (0.0 %)
+ Default replication factor:	1
+ Average block replication:	1.0
+ Missing blocks:		0
+ Corrupt blocks:		0
+ Missing replicas:		0 (0.0 %)
+ Blocks queued for replication:	0
+Erasure Coded Block Groups:
+ Total size:	0 B
+ Total files:	0
+ Total block groups (validated):	0
+ Minimally erasure-coded block groups:	0
+ Over-erasure-coded block groups:	0
+ Under-erasure-coded block groups:	0
+ Unsatisfactory placement block groups:	0
+ Average block group size:	0.0
+ Missing block groups:		0
+ Corrupt block groups:		0
+ Missing internal blocks:	0
+ Blocks queued for replication:	0
+FSCK ended at Tue Nov 17 13:30:56 CET 2026 in 14 milliseconds
+The filesystem under path '/retail-lake/raw/tpcxbb/initial/inventory/inventory.dat' is HEALTHY
+
+$ hdfs fsck /retail-lake
+Status: HEALTHY
+ Total dirs:			46
+ Total symlinks:		0
+ Total size:	1033842305 B
+ Total files:	34
+ Total blocks (validated):	38 (avg. block size 27206376 B)
+ Minimally replicated blocks:	38 (100.0 %)
+ Over-replicated blocks:	0 (0.0 %)
+ Under-replicated blocks:	0 (0.0 %)
+ Mis-replicated blocks:		0 (0.0 %)
+ Default replication factor:	1
+ Average block replication:	1.0
+ Missing blocks:		0
+ Corrupt blocks:		0
+ Missing replicas:		0 (0.0 %)
+ Blocks queued for replication:	0
+ Total size:	0 B
+ Total files:	0
+ Total block groups (validated):	0
+ Missing block groups:		0
+ Corrupt block groups:		0
+ Missing internal blocks:	0
+ Blocks queued for replication:	0
+The filesystem under path '/retail-lake' is HEALTHY

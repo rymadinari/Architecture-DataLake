@@ -1,0 +1,13 @@
+# Étape 9 – préparation du fichier de test
+# 17/11/2026 vers 16 h 29 – fichier choisi : ship_mode.dat (1 220 octets, lot initial du kit)
+
+$ hdfs dfs -ls /retail-lake/raw/nifi
+(aucun fichier : la destination est vide avant le test)
+
+$ cp ~/TP1/retail_project/data/ship_mode/ship_mode.dat ~/nifi-data/input/
+$ ls -l ~/nifi-data/input/
+total 4
+-rw-rw-r-- 1 rymadinari rymadinari 1220 nov.  17 16:29 ship_mode.dat
+
+$ sha256sum ~/TP1/retail_project/data/ship_mode/ship_mode.dat
+8c48d71b318dbab1c048fd2b9fd5e6a6cba087ce07940537472bb0d5d5540125  /home/rymadinari/TP1/retail_project/data/ship_mode/ship_mode.dat

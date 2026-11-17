@@ -1,0 +1,75 @@
+=== Étape 1 – Environnement Hadoop (17/11/2026 13:25:40) ===
+$ lsb_release -d
+Description:	Ubuntu 24.04.4 LTS
+$ java -version
+openjdk version "17.0.21" 2026-10-20
+OpenJDK Runtime Environment Temurin-17.0.21+9 (build 17.0.21+9)
+OpenJDK 64-Bit Server VM Temurin-17.0.21+9 (build 17.0.21+9, mixed mode, sharing)
+$ hadoop version
+Hadoop 3.5.0
+Source code repository https://github.com/apache/hadoop.git -r dbcc7cd797100e6b32cd84f85b53a5193a5f9af0
+Compiled by cnauroth on 2026-03-24T16:56Z
+Compiled on platform linux-x86_64
+Compiled with protoc 3.25.5
+From source with checksum 64582ed0a62a169c39a19c734a8f33b5
+This command was run using /home/rymadinari/opt/hadoop/share/hadoop/common/hadoop-common-3.5.0.jar
+$ echo $HADOOP_HOME $HADOOP_CONF_DIR
+/home/rymadinari/opt/hadoop /home/rymadinari/opt/hadoop/etc/hadoop
+$ hdfs getconf -confKey fs.defaultFS / dfs.replication / dfs.blocksize
+hdfs://localhost:9000
+1
+134217728
+$ jps
+329892 SecondaryNameNode
+329746 DataNode
+329666 NameNode
+330936 Jps
+$ hdfs dfsadmin -report
+Configured Capacity: 146273382400 (136.23 GB)
+Present Capacity: 40187953152 (37.43 GB)
+DFS Remaining: 40187928576 (37.43 GB)
+DFS Used: 24576 (24 KB)
+DFS Used%: 0.00%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: 127.0.0.1:9866 (localhost)
+Hostname: rymadinari-VivoBook-ASUSLaptop-M1702QA-M1702QA
+Decommission Status : Normal
+Configured Capacity: 146273382400 (136.23 GB)
+DFS Used: 24576 (24 KB)
+Non DFS Used: 98580615168 (91.81 GB)
+DFS Remaining: 40187928576 (37.43 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 27.47%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Tue Nov 17 13:25:41 CET 2026
+Last Block Report: Tue Nov 17 13:25:17 CET 2026
+Num of Blocks: 0
+
+
+$ curl http://localhost:9870 (interface web NameNode)
+code HTTP 200
+$ hdfs haadmin / safemode
+Safe mode is OFF

@@ -1,0 +1,5 @@
+$ hdfs namenode -format   (17/11/2026 13:24:58, première installation, dossier namenode vide)
+2026-11-17 13:24:59,057 INFO namenode.NameNode: Formatting using clusterid: CID-acf81773-d977-4018-ad81-8985680f4f13
+2026-11-17 13:24:59,344 INFO common.Storage: Storage directory /home/rymadinari/hadoop-data/namenode has been successfully formatted.
+2026-11-17 13:24:59,479 INFO namenode.NameNode: SHUTDOWN_MSG: 
+SHUTDOWN_MSG: Shutting down NameNode at rymadinari-VivoBook-ASUSLaptop-M1702QA-M1702QA/127.0.1.1

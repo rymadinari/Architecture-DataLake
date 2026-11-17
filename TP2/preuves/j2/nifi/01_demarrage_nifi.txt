@@ -1,0 +1,20 @@
+=== Démarrage NiFi (17/11/2026 13:31:57) ===
+$ export JAVA_HOME=/home/rymadinari/opt/jdk-21
+$ java -version
+openjdk version "21.0.13" 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode, sharing)
+$ ~/opt/nifi/bin/nifi.sh start
+
+(NiFi a affiché 'Started Server' à 13:32:13 dans nifi-app.log)
+$ ~/opt/nifi/bin/nifi.sh status
+2026-11-17 13:37:17,657 INFO [main] org.apache.nifi.bootstrap.Command Application Process [349693] Command Status [SUCCESS] HTTP 200
+2026-11-17 13:37:17,659 INFO [main] org.apache.nifi.bootstrap.Command Status: UP
+
+$ curl -k https://localhost:8444/nifi/
+code HTTP 200
+$ grep 'Started Server' ~/opt/nifi/logs/nifi-app.log
+2026-11-17 13:32:13,464 INFO [main] org.apache.nifi.web.server.JettyServer Started Server on https://localhost:8444/nifi
+$ ls ~/opt/nifi/work/nar/extensions | grep hadoop
+nifi-hadoop-libraries-nar-2.12.0.nar-unpacked
+nifi-hadoop-nar-2.12.0.nar-unpacked

@@ -1,0 +1,14 @@
+=== Étape 6 – Découverte de l'instance NiFi (17/11/2026 13:37:27) ===
+Version NiFi : 2.12.0 | titre : NiFi | URI : https://localhost:8444/nifi-api/
+État général : {'activeThreadCount': 0, 'queued': '0 / 0 bytes', 'runningCount': 0, 'stoppedCount': 0, 'invalidCount': 0}
+Cluster : False -> instance seule (mono-nœud)
+Nombre de processeurs disponibles : 304
+  GetFile           disponible (nifi-standard-nar 2.12.0)
+  PutHDFS           disponible (nifi-hadoop-nar 2.12.0)
+  ListHDFS          disponible (nifi-hadoop-nar 2.12.0)
+  FetchHDFS         disponible (nifi-hadoop-nar 2.12.0)
+  LogAttribute      disponible (nifi-standard-nar 2.12.0)
+  UpdateAttribute   disponible (nifi-update-attribute-nar 2.12.0)
+  RouteOnAttribute  disponible (nifi-standard-nar 2.12.0)
+  PutFile           disponible (nifi-standard-nar 2.12.0)
+Nombre de Controller Services disponibles : 125

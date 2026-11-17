@@ -1,0 +1,108 @@
+=== Dépôt HDFS du 17/11/2026 13:26:11 par rymadinari ===
+
+--- 1. Arborescence du Data Lake ---
+$ hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/initial
+$ hdfs dfs -mkdir -p /retail-lake/raw/tpcxbb/refresh
+$ hdfs dfs -mkdir -p /retail-lake/raw/nifi
+$ hdfs dfs -mkdir -p /retail-lake/bronze/tpcxbb
+$ hdfs dfs -mkdir -p /retail-lake/silver
+$ hdfs dfs -mkdir -p /retail-lake/gold
+$ hdfs dfs -mkdir -p /retail-lake/quality
+$ hdfs dfs -mkdir -p /retail-lake/logs
+
+--- 2. Dépôt des fichiers (un dossier par table) ---
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/customer_address/customer_address.dat /retail-lake/raw/tpcxbb/initial/customer_address/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/customer/customer.dat /retail-lake/raw/tpcxbb/initial/customer/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/customer_demographics/customer_demographics.dat /retail-lake/raw/tpcxbb/initial/customer_demographics/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/date_dim/date_dim.dat /retail-lake/raw/tpcxbb/initial/date_dim/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/household_demographics/household_demographics.dat /retail-lake/raw/tpcxbb/initial/household_demographics/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/income_band/income_band.dat /retail-lake/raw/tpcxbb/initial/income_band/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/inventory/inventory.dat /retail-lake/raw/tpcxbb/initial/inventory/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/item/item.dat /retail-lake/raw/tpcxbb/initial/item/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/item_marketprices/item_marketprices.dat /retail-lake/raw/tpcxbb/initial/item_marketprices/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/product_reviews/product_reviews.dat /retail-lake/raw/tpcxbb/initial/product_reviews/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/promotion/promotion.dat /retail-lake/raw/tpcxbb/initial/promotion/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/reason/reason.dat /retail-lake/raw/tpcxbb/initial/reason/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/ship_mode/ship_mode.dat /retail-lake/raw/tpcxbb/initial/ship_mode/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/store_returns/store_returns.dat /retail-lake/raw/tpcxbb/initial/store_returns/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/store_sales/store_sales.dat /retail-lake/raw/tpcxbb/initial/store_sales/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/store/store.dat /retail-lake/raw/tpcxbb/initial/store/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/time_dim/time_dim.dat /retail-lake/raw/tpcxbb/initial/time_dim/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/warehouse/warehouse.dat /retail-lake/raw/tpcxbb/initial/warehouse/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/web_clickstreams/web_clickstreams.dat /retail-lake/raw/tpcxbb/initial/web_clickstreams/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/web_page/web_page.dat /retail-lake/raw/tpcxbb/initial/web_page/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/web_returns/web_returns.dat /retail-lake/raw/tpcxbb/initial/web_returns/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/web_sales/web_sales.dat /retail-lake/raw/tpcxbb/initial/web_sales/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data/web_site/web_site.dat /retail-lake/raw/tpcxbb/initial/web_site/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/customer_address/customer_address.dat /retail-lake/raw/tpcxbb/refresh/customer_address/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/customer/customer.dat /retail-lake/raw/tpcxbb/refresh/customer/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/inventory/inventory.dat /retail-lake/raw/tpcxbb/refresh/inventory/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/item/item.dat /retail-lake/raw/tpcxbb/refresh/item/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/item_marketprices/item_marketprices.dat /retail-lake/raw/tpcxbb/refresh/item_marketprices/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/product_reviews/product_reviews.dat /retail-lake/raw/tpcxbb/refresh/product_reviews/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/store_returns/store_returns.dat /retail-lake/raw/tpcxbb/refresh/store_returns/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/store_sales/store_sales.dat /retail-lake/raw/tpcxbb/refresh/store_sales/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/web_clickstreams/web_clickstreams.dat /retail-lake/raw/tpcxbb/refresh/web_clickstreams/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/web_returns/web_returns.dat /retail-lake/raw/tpcxbb/refresh/web_returns/
+  OK
+$ hdfs dfs -put /home/rymadinari/TP1/retail_project/data_refresh/web_sales/web_sales.dat /retail-lake/raw/tpcxbb/refresh/web_sales/
+  OK
+
+--- 3. Résultat ---
+$ hdfs dfs -ls -R /retail-lake | head
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/bronze
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/bronze/tpcxbb
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/gold
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/logs
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/quality
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/nifi
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:27 /retail-lake/raw/tpcxbb/initial
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer
+-rw-r--r--   1 rymadinari supergroup   13279063 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer/customer.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_address
+-rw-r--r--   1 rymadinari supergroup    5387229 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_address/customer_address.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_demographics
+-rw-r--r--   1 rymadinari supergroup   77753083 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/customer_demographics/customer_demographics.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/date_dim
+-rw-r--r--   1 rymadinari supergroup   15395800 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/date_dim/date_dim.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/household_demographics
+-rw-r--r--   1 rymadinari supergroup     155100 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/household_demographics/household_demographics.dat
+drwxr-xr-x   - rymadinari supergroup          0 2026-11-17 13:26 /retail-lake/raw/tpcxbb/initial/income_band
+$ hdfs dfs -du -h /retail-lake/raw/tpcxbb
+977.0 M  977.0 M  /retail-lake/raw/tpcxbb/initial
+9.0 M    9.0 M    /retail-lake/raw/tpcxbb/refresh
+=== Fin 13:28:40 ===
