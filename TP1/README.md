@@ -29,8 +29,7 @@ J1_Retail_Intelligence/
 │   └── preuves/                            captures des schémas
 ├── 05_contribution_individuelle/
 │   └── contribution_ryma_dinari.pdf
-├── scripts/                                profilage et génération des livrables (reproductibles)
-└── sources/                                sources Markdown des PDF + feuille de style
+└── scripts/                                profilage et génération des livrables (reproductibles)
 ```
 
 Les parties complémentaire (UC-C1, UC-C2) et avancée (UC-A1) ne sont pas réalisées : les dossiers `03_complementaire/` et `04_avance/` sont donc absents. Projet réalisé seule : la contribution individuelle est dans `05_contribution_individuelle/contribution_ryma_dinari.pdf`.
@@ -50,5 +49,4 @@ cd TP1
 python3 -m venv .venv && .venv/bin/pip install duckdb pandas openpyxl markdown
 .venv/bin/python J1_Retail_Intelligence/scripts/profilage.py    # ~3 min, écrit les preuves UC-01
 .venv/bin/python J1_Retail_Intelligence/scripts/build_xlsx.py   # dictionnaire KPI + inventaire
-.venv/bin/python J1_Retail_Intelligence/scripts/build_docs.py   # PDF (nécessite google-chrome)
 ```
