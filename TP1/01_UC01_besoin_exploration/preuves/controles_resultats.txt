@@ -1,0 +1,262 @@
+== INVENTAIRE ==
+data          customer                     13.28 Mo      99000 lignes  18 col
+data          customer_address              5.39 Mo      49500 lignes  13 col
+data          customer_demographics        77.75 Mo    1920800 lignes   9 col
+data          date_dim                      15.4 Mo     109573 lignes  28 col
+data          household_demographics        0.16 Mo       7200 lignes   5 col
+data          income_band                    0.0 Mo         20 lignes   3 col
+data          inventory                   424.94 Mo   23255100 lignes   4 col
+data          item                           6.8 Mo      17820 lignes  22 col
+data          item_marketprices              4.2 Mo      89100 lignes   6 col
+data          product_reviews              56.36 Mo      89991 lignes   8 col
+data          promotion                     0.05 Mo        300 lignes  19 col
+data          reason                         0.0 Mo         35 lignes   3 col
+data          ship_mode                      0.0 Mo         20 lignes   6 col
+data          store                          0.0 Mo         12 lignes  29 col
+data          store_returns                 4.34 Mo      37902 lignes  20 col
+data          store_sales                  92.76 Mo     667579 lignes  23 col
+data          time_dim                      5.11 Mo      86400 lignes  10 col
+data          warehouse                      0.0 Mo          5 lignes  14 col
+data          web_clickstreams            178.72 Mo    6770550 lignes   6 col
+data          web_page                      0.01 Mo         60 lignes  14 col
+data          web_returns                   5.38 Mo      38487 lignes  24 col
+data          web_sales                   133.79 Mo     668052 lignes  34 col
+data          web_site                      0.01 Mo         30 lignes  26 col
+data_refresh  customer                      0.13 Mo       1000 lignes  18 col
+data_refresh  customer_address              0.05 Mo        500 lignes  13 col
+data_refresh  inventory                     4.29 Mo     234900 lignes   4 col
+data_refresh  item                          0.07 Mo        180 lignes  22 col
+data_refresh  item_marketprices             0.04 Mo        900 lignes   6 col
+data_refresh  product_reviews               0.57 Mo        909 lignes   8 col
+data_refresh  store_returns                 0.05 Mo        426 lignes  20 col
+data_refresh  store_sales                   0.92 Mo       6632 lignes  23 col
+data_refresh  web_clickstreams              1.82 Mo      68988 lignes   6 col
+data_refresh  web_returns                   0.06 Mo        400 lignes  24 col
+data_refresh  web_sales                     1.38 Mo       6879 lignes  34 col
+data          item_marketprices_audit        0.0 Mo          5 lignes   8 col
+data_refresh  item_marketprices_audit       0.15 Mo      17986 lignes   8 col
+Total octets : 1033993587 | fichiers : 36
+
+== COLONNES AVEC VALEURS NULLES (lot initial) ==
+customer                 c_current_cdemo_sk             0.02 %
+customer                 c_current_hdemo_sk             0.03 %
+customer                 c_current_addr_sk              0.02 %
+customer                 c_first_shipto_date_sk         0.03 %
+customer                 c_first_sales_date_sk          0.02 %
+customer                 c_salutation                   0.03 %
+customer                 c_preferred_cust_flag          0.03 %
+customer                 c_birth_day                    0.02 %
+customer                 c_birth_month                  0.03 %
+customer                 c_birth_year                   0.03 %
+customer                 c_birth_country                0.02 %
+customer                 c_login                        0.03 %
+customer                 c_email_address                0.02 %
+customer                 c_last_review_date             0.03 %
+customer_address         ca_street_number               0.03 %
+customer_address         ca_street_name                 0.02 %
+customer_address         ca_street_type                 0.03 %
+customer_address         ca_suite_number                0.05 %
+customer_address         ca_zip                         0.03 %
+customer_demographics    cd_gender                      0.03 %
+customer_demographics    cd_marital_status              0.03 %
+customer_demographics    cd_education_status            0.03 %
+customer_demographics    cd_purchase_estimate           0.03 %
+customer_demographics    cd_credit_rating               0.03 %
+customer_demographics    cd_dep_count                   0.03 %
+customer_demographics    cd_dep_employed_count          0.03 %
+customer_demographics    cd_dep_college_count           0.03 %
+household_demographics   hd_income_band_sk              0.03 %
+household_demographics   hd_buy_potential               0.01 %
+household_demographics   hd_dep_count                   0.03 %
+household_demographics   hd_vehicle_count               0.03 %
+inventory                inv_quantity_on_hand           0.03 %
+item                     i_rec_end_date               100.00 %
+item                     i_item_desc                    0.02 %
+item                     i_brand_id                     0.04 %
+item                     i_brand                        0.03 %
+item_marketprices        imp_competitor_price           0.03 %
+item_marketprices        imp_end_date                   0.03 %
+product_reviews          pr_review_content              0.01 %
+promotion                p_channel_radio                0.33 %
+store                    s_rec_end_date               100.00 %
+store_returns            sr_cdemo_sk                    0.06 %
+store_returns            sr_hdemo_sk                    0.04 %
+store_returns            sr_addr_sk                     0.11 %
+store_returns            sr_reason_sk                   0.03 %
+store_sales              ss_cdemo_sk                    0.04 %
+store_sales              ss_hdemo_sk                    0.04 %
+store_sales              ss_addr_sk                     0.07 %
+store_sales              ss_promo_sk                    0.02 %
+time_dim                 t_meal_time                   58.33 %
+web_clickstreams         wcs_sales_sk                  90.13 %
+web_clickstreams         wcs_user_sk                   42.15 %
+web_page                 wp_rec_end_date              100.00 %
+web_returns              wr_refunded_cdemo_sk           0.10 %
+web_returns              wr_refunded_hdemo_sk           0.05 %
+web_returns              wr_refunded_addr_sk            0.11 %
+web_returns              wr_returning_cdemo_sk          0.16 %
+web_returns              wr_returning_hdemo_sk          0.09 %
+web_returns              wr_returning_addr_sk           0.15 %
+web_returns              wr_web_page_sk                 0.03 %
+web_returns              wr_reason_sk                   0.02 %
+web_sales                ws_bill_cdemo_sk               0.05 %
+web_sales                ws_bill_hdemo_sk               0.04 %
+web_sales                ws_bill_addr_sk                0.04 %
+web_sales                ws_ship_cdemo_sk               0.07 %
+web_sales                ws_ship_hdemo_sk               0.07 %
+web_sales                ws_ship_addr_sk                0.06 %
+web_sales                ws_web_page_sk                 0.02 %
+web_sales                ws_web_site_sk                 0.02 %
+web_sales                ws_ship_mode_sk                0.03 %
+web_sales                ws_warehouse_sk                0.02 %
+web_sales                ws_promo_sk                    0.02 %
+web_site                 web_rec_end_date             100.00 %
+
+== UNICITÉ DES CLÉS CANDIDATES ==
+customer                 (c_customer_sk) lignes=99000 distinct=99000 nulls=0 -> UNIQUE
+customer_address         (ca_address_sk) lignes=49500 distinct=49500 nulls=0 -> UNIQUE
+customer_demographics    (cd_demo_sk) lignes=1920800 distinct=1920800 nulls=0 -> UNIQUE
+household_demographics   (hd_demo_sk) lignes=7200 distinct=7200 nulls=0 -> UNIQUE
+item                     (i_item_sk) lignes=17820 distinct=17820 nulls=0 -> UNIQUE
+store                    (s_store_sk) lignes=12 distinct=12 nulls=0 -> UNIQUE
+date_dim                 (d_date_sk) lignes=109573 distinct=109573 nulls=0 -> UNIQUE
+time_dim                 (t_time_sk) lignes=86400 distinct=86400 nulls=0 -> UNIQUE
+promotion                (p_promo_sk) lignes=300 distinct=300 nulls=0 -> UNIQUE
+warehouse                (w_warehouse_sk) lignes=5 distinct=5 nulls=0 -> UNIQUE
+web_page                 (wp_web_page_sk) lignes=60 distinct=60 nulls=0 -> UNIQUE
+web_site                 (web_site_sk) lignes=30 distinct=30 nulls=0 -> UNIQUE
+reason                   (r_reason_sk) lignes=35 distinct=35 nulls=0 -> UNIQUE
+product_reviews          (pr_review_sk) lignes=89991 distinct=89991 nulls=0 -> UNIQUE
+item_marketprices        (imp_sk) lignes=89100 distinct=89100 nulls=0 -> UNIQUE
+store_sales              (ss_ticket_number, ss_item_sk) lignes=667579 distinct=663443 nulls=0 -> NON UNIQUE
+web_sales                (ws_order_number, ws_item_sk) lignes=668052 distinct=663976 nulls=0 -> NON UNIQUE
+store_returns            (sr_ticket_number, sr_item_sk) lignes=37902 distinct=37744 nulls=0 -> NON UNIQUE
+web_returns              (wr_order_number, wr_item_sk) lignes=38487 distinct=38337 nulls=0 -> NON UNIQUE
+inventory                (inv_date_sk, inv_item_sk, inv_warehouse_sk) lignes=23255100 distinct=23255100 nulls=0 -> UNIQUE
+
+== RELATIONS : CLÉS ÉTRANGÈRES SANS CORRESPONDANCE ==
+store_sales.ss_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=667579 null=0 (0.00%) orphelins=0
+store_sales.ss_store_sk -> store.s_store_sk [BIGINT/BIGINT] lignes=667579 null=0 (0.00%) orphelins=0
+store_sales.ss_customer_sk -> customer.c_customer_sk [BIGINT/BIGINT] lignes=667579 null=0 (0.00%) orphelins=0
+store_sales.ss_sold_date_sk -> date_dim.d_date_sk [BIGINT/BIGINT] lignes=667579 null=0 (0.00%) orphelins=0
+store_sales.ss_sold_time_sk -> time_dim.t_time_sk [BIGINT/BIGINT] lignes=667579 null=0 (0.00%) orphelins=0
+store_sales.ss_promo_sk -> promotion.p_promo_sk [BIGINT/BIGINT] lignes=667579 null=158 (0.02%) orphelins=0
+store_sales.ss_cdemo_sk -> customer_demographics.cd_demo_sk [BIGINT/BIGINT] lignes=667579 null=238 (0.04%) orphelins=0
+store_sales.ss_hdemo_sk -> household_demographics.hd_demo_sk [BIGINT/BIGINT] lignes=667579 null=295 (0.04%) orphelins=0
+store_sales.ss_addr_sk -> customer_address.ca_address_sk [BIGINT/BIGINT] lignes=667579 null=448 (0.07%) orphelins=0
+web_sales.ws_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=668052 null=0 (0.00%) orphelins=0
+web_sales.ws_bill_customer_sk -> customer.c_customer_sk [BIGINT/BIGINT] lignes=668052 null=0 (0.00%) orphelins=0
+web_sales.ws_sold_date_sk -> date_dim.d_date_sk [BIGINT/BIGINT] lignes=668052 null=0 (0.00%) orphelins=0
+web_sales.ws_web_site_sk -> web_site.web_site_sk [BIGINT/BIGINT] lignes=668052 null=154 (0.02%) orphelins=0
+web_sales.ws_web_page_sk -> web_page.wp_web_page_sk [BIGINT/BIGINT] lignes=668052 null=164 (0.02%) orphelins=0
+web_sales.ws_warehouse_sk -> warehouse.w_warehouse_sk [BIGINT/BIGINT] lignes=668052 null=158 (0.02%) orphelins=0
+web_sales.ws_ship_mode_sk -> ship_mode.sm_ship_mode_sk [BIGINT/BIGINT] lignes=668052 null=170 (0.03%) orphelins=0
+web_sales.ws_promo_sk -> promotion.p_promo_sk [BIGINT/BIGINT] lignes=668052 null=121 (0.02%) orphelins=0
+store_returns.sr_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=37902 null=0 (0.00%) orphelins=0
+store_returns.sr_store_sk -> store.s_store_sk [BIGINT/BIGINT] lignes=37902 null=0 (0.00%) orphelins=0
+store_returns.sr_reason_sk -> reason.r_reason_sk [BIGINT/BIGINT] lignes=37902 null=11 (0.03%) orphelins=0
+web_returns.wr_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=38487 null=0 (0.00%) orphelins=0
+web_returns.wr_reason_sk -> reason.r_reason_sk [BIGINT/BIGINT] lignes=38487 null=7 (0.02%) orphelins=0
+inventory.inv_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=23255100 null=0 (0.00%) orphelins=232380
+inventory.inv_warehouse_sk -> warehouse.w_warehouse_sk [BIGINT/BIGINT] lignes=23255100 null=0 (0.00%) orphelins=0
+inventory.inv_date_sk -> date_dim.d_date_sk [BIGINT/BIGINT] lignes=23255100 null=0 (0.00%) orphelins=0
+web_clickstreams.wcs_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=6770550 null=0 (0.00%) orphelins=0
+web_clickstreams.wcs_web_page_sk -> web_page.wp_web_page_sk [BIGINT/BIGINT] lignes=6770550 null=164 (0.00%) orphelins=0
+web_clickstreams.wcs_user_sk -> customer.c_customer_sk [BIGINT/BIGINT] lignes=6770550 null=2853461 (42.15%) orphelins=0
+web_clickstreams.wcs_click_date_sk -> date_dim.d_date_sk [BIGINT/BIGINT] lignes=6770550 null=0 (0.00%) orphelins=0
+product_reviews.pr_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=89991 null=0 (0.00%) orphelins=0
+product_reviews.pr_user_sk -> customer.c_customer_sk [BIGINT/BIGINT] lignes=89991 null=0 (0.00%) orphelins=0
+customer.c_current_addr_sk -> customer_address.ca_address_sk [BIGINT/BIGINT] lignes=99000 null=22 (0.02%) orphelins=0
+customer.c_current_cdemo_sk -> customer_demographics.cd_demo_sk [BIGINT/BIGINT] lignes=99000 null=18 (0.02%) orphelins=0
+customer.c_current_hdemo_sk -> household_demographics.hd_demo_sk [BIGINT/BIGINT] lignes=99000 null=29 (0.03%) orphelins=0
+household_demographics.hd_income_band_sk -> income_band.ib_income_band_sk [BIGINT/BIGINT] lignes=7200 null=2 (0.03%) orphelins=0
+item_marketprices.imp_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=89100 null=0 (0.00%) orphelins=0
+promotion.p_item_sk -> item.i_item_sk [BIGINT/BIGINT] lignes=300 null=0 (0.00%) orphelins=0
+
+== PÉRIODES COUVERTES ==
+store_sales            du 2001-01-01 au 2005-12-13 (1808 jours distincts)
+web_sales              du 2001-01-01 au 2005-12-13 (1808 jours distincts)
+store_returns          du 2001-01-25 au 2007-11-14 (2221 jours distincts)
+web_returns            du 2001-01-26 au 2008-03-18 (2492 jours distincts)
+inventory              du 2001-01-01 au 2005-12-12 (259 jours distincts)
+web_clickstreams       du 2001-01-01 au 2005-12-13 (1808 jours distincts)
+r_store_sales          du 2005-12-13 au 2005-12-31 (19 jours distincts)
+r_web_sales            du 2005-12-13 au 2005-12-31 (19 jours distincts)
+r_inventory            du 2005-12-12 au 2005-12-26 (3 jours distincts)
+r_web_clickstreams     du 2005-12-13 au 2005-12-31 (19 jours distincts)
+date_dim : (datetime.date(1900, 1, 1), datetime.date(2199, 12, 31))
+inventory : dates d'inventaire distinctes = 259 | écart en jours = [7]
+
+== GRAIN DES VENTES ==
+store_sales: lignes=667579 tickets/commandes distincts=89100 lignes par ticket=7.49
+web_sales: lignes=668052 tickets/commandes distincts=89100 lignes par ticket=7.5
+
+== COHÉRENCE DES MONTANTS ==
+store_sales ext_sales_price <> quantity*sales_price (écart>0.01) : 0
+store_sales net_profit <> net_paid - ext_wholesale_cost : 0
+store_sales sales_price > list_price : 0
+store_sales net_profit < 0 (lignes) : (495971, 74.29)
+web_sales ext_sales_price <> quantity*sales_price : 0
+web_sales ship_date < sold_date : 0
+quantités min/max store / web : (1, 100) (1, 100)
+inventory quantity_on_hand min/max/null : (0, 1000, 5999)
+
+== RETOURS -> VENTES ==
+store_returns retrouvés dans store_sales (ticket+item) : (38391, 38391)
+web_returns retrouvés dans web_sales (order+item) : (38939, 38939)
+store_returns quantité retournée > quantité vendue : 112
+store_returns date retour < date vente : 0
+taux de lignes retournées store / web (%) : (5.68, 5.76)
+
+== NAVIGATION ==
+clics totaux / avec wcs_sales_sk / avec wcs_user_sk : (6770550, 668052, 3917089)
+wcs_sales_sk retrouvé dans web_sales.ws_order_number : 89100 sur 89100 valeurs distinctes
+
+== RÉFÉRENTIELS ==
+store : [(0, 'Forest', 'Post Oak', 'CO', 71238, 217), (1, 'Hillside', 'Jerusalem', 'TN', 18994, 244), (2, 'Sherwood', 'Mount Vernon', 'CA', 8900, 266), (3, 'Pioneer', 'Austin', 'TX', 69902, 221), (4, 'Elmwood', 'Lakeside', 'KY', 79617, 254), (5, 'Egypt', 'Redland', 'KY', 88139, 215), (6, 'Bloomfield', 'Union Hill', 'IN', 15761, 225), (7, 'Buffalo', 'Lewisburg', 'KS', 71446, 225), (8, 'Williamstown', 'State Line', 'TX', 50689, 298), (9, 'Germantown', 'Pierce', 'WV', 25131, 213), (10, 'Avalon', 'Cold Springs', 'TN', 6235, 254), (11, 'Bedford', 'Lyons', 'KY', 43634, 221)]
+store.s_closed_date_sk -> date : [(0, datetime.date(2095, 1, 16)), (1, datetime.date(1952, 1, 3)), (2, datetime.date(1924, 5, 15)), (3, datetime.date(2091, 5, 21)), (4, datetime.date(2117, 12, 26)), (5, datetime.date(2141, 4, 26)), (6, datetime.date(1943, 2, 26)), (7, datetime.date(2095, 8, 12)), (8, datetime.date(2038, 10, 13)), (9, datetime.date(1968, 10, 22)), (10, datetime.date(1917, 1, 27)), (11, datetime.date(2019, 6, 20))]
+item catégories : [('Music', 8143), ('Books', 5335), ('Movies & TV', 1286), ('Electronics', 692), ('Clothing & Accessories', 610), ('Home & Kitchen', 476), ('Sports & Outdoors', 465), ('Tools & Home Improvement', 408), ('Toys & Games', 405)]
+item i_rec_end_date renseigné : 0 | i_item_id distincts : 17820
+item prix courant min/max/null : (0.1, 99.98, 0)
+customer_demographics genres : [('F', 959218), (None, 486), ('M', 961096)]
+customer c_birth_year min/max : (1924, 1992)
+customer c_last_review_date exemples : [('gdMmGdU9',), ('hLQn0LtVa',), ('vDVbSOCI',)]
+customer emails distincts / lignes : (98655, 99000)
+reason exemples : [(0, '59h3KawhwK', 'slyly thin dugouts on the ironically enticing realms woul'), (1, 'a6TzYqeb5XgwOe', 'epitaphs will have to affix stealthily even notornis! warhorses since the busy att'), (2, 'R2PsDlX', 'excuses after the permanent courts try to was excuses? fluffy silent orbits d')]
+ship_mode exemples : [('0k0a5LMf', 'JpQUqCDAHAO5n7I'), ('slLBKEIcd4EKHkD75Lur3BMuGE1', '1jj19TXJSW9Z'), ('N6js2CKWyyaiYmSLNbxXCuhCgSF1ch', '1hoB')]
+web_page types : [('ad', 10), ('protected', 2), ('feedback', 14), ('order', 7), ('general', 4), ('review', 8), ('dynamic', 10), ('welcome', 5)]
+promotion canaux (email/tv) : [('N', 'N', 241), ('Y', 'N', 28), ('N', 'Y', 27), ('Y', 'Y', 4)]
+product_reviews note min/max : [(1, 5932), (2, 4312), (3, 7270), (4, 17231), (5, 55246)]
+
+== LOT DATA_REFRESH ==
+r_customer: clés 99000..99999, chevauchement avec lot initial = 0
+r_item: clés 17820..17999, chevauchement avec lot initial = 0
+r_customer_address: clés 49500..49999, chevauchement avec lot initial = 0
+r_store_sales tickets déjà présents dans store_sales : 0
+r_store_sales items absents de item (initial) mais présents dans r_item : 56
+r_web_sales lignes avec ws_bill_hdemo_sk null : (13, 6879)
+r_store_sales tickets min/max/distincts : (89100, 89999, 900)
+r_store_returns retrouvés dans store_sales initial / dans r_store_sales : (426, 19) (426, 0)
+r_web_returns retrouvés dans web_sales initial / dans r_web_sales : (402, 28) (400, 3)
+
+== CONTRÔLES COMPLÉMENTAIRES ==
+inventory : produits orphelins (absents de data/item) min/max/distincts : (17820, 17999, 180)
+inventory : ces produits existent dans data_refresh/item : 180
+store_sales : tickets avec >1 client, magasin ou date : 0
+web_sales : commandes avec >1 client facturé ou date : 0
+store_sales : doublons exacts (lignes identiques) : 0
+store_sales : exemples de (ticket, item) répétés : [(44, 10003, 2), (46, 10000, 2), (46, 17502, 2)]
+CA net payé (net_paid) par année et canal : [(2001, 'store', 232498660.0), (2001, 'web', 310273003.0), (2002, 'store', 230947266.0), (2002, 'web', 309751734.0), (2003, 'store', 233575186.0), (2003, 'web', 313014722.0), (2004, 'store', 234344934.0), (2004, 'web', 311005273.0), (2005, 'store', 219163541.0), (2005, 'web', 291330092.0)]
+CA net payé et tickets par magasin : [(0, 96727852.0, 7456), (1, 95929845.0, 7422), (2, 94040403.0, 7359), (3, 96063991.0, 7396), (4, 96770106.0, 7462), (5, 94097279.0, 7369), (6, 94751173.0, 7284), (7, 98950138.0, 7645), (8, 96578623.0, 7414), (9, 96748357.0, 7435), (10, 94263978.0, 7409), (11, 95607843.0, 7449)]
+taux de remise global store (ext_discount/ext_list, %) et part coupons (%) : (49.99, 9.92)
+panier moyen store / web (net_paid par ticket/commande) : 12912.79 17232.04
+clients acheteurs distincts store / web : 37336 37367
+clics avec wcs_sales_sk mais wcs_user_sk null : 0
+product_reviews.pr_order_sk présents dans ws_order_number / min-max : 89991 (0, 89097)
+date_dim.d_holiday répartition : [('Y', 109573)]
+item.i_container répartition : [('Unknown', 17820)]
+customer : c_first_sales_date hors 2001-2005 / total renseigné : (97333, 98982)
+customer : premier envoi avant premier achat : 49436
+promotion : dates de début min/max : (datetime.date(1901, 7, 15), datetime.date(2199, 7, 16))
+store_sales : lignes avec promo dont la vente est hors période de la promotion : 462806
+web_site : noms distincts : [('site_0', 6), ('site_1', 6), ('site_2', 6), ('site_3', 6), ('site_4', 6)]

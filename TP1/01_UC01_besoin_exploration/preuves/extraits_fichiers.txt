@@ -1,0 +1,181 @@
+# Extraits (3 premières lignes, 300 premiers caractères) de chaque fichier du kit
+
+== retail_project/data/customer_address/customer_address.dat
+0|AAAAAAAAAAAAAAAA|561|Cedar 12th|Road|J5jix6JEFD|Genoa|Tuscarawas County|OH|64453|United States|-5|single family
+1|AAAAAAAAAAAAAAAB|473|Birch Poplar|Ct.|tEmwYrz|Chapel Hill|Hodgeman County|KS|17270|United States|-6|single family
+2|AAAAAAAAAAAAAAAC|786|2nd Poplar|Way|6a123dP|Midway|Spotsylvania County|VA|14835|United States|-5|apartment
+
+== retail_project/data/customer/customer.dat
+0|AAAAAAAAAAAAAAAA|1824793|3203|2555|28776|14690|Ms.|Marisa|Harrington|N|17|4|1988|UNITED ARAB EMIRATES|RRCyuY3XfE3a|Marisa.Harrington@lawyer.com|gdMmGdU9
+1|AAAAAAAAAAAAAAAB|830976|2600|9191|94658|19931|Miss|Bessie|Calderon|N|20|10|1945|MONACO|aCJb9cc|Bessie.Calderon@snail-mail.net|hLQn0LtVa
+2|AAAAAAAAAAAAAAAC|335540|5527|14091|31783|106195|Miss|Barbara|Hoover|Y|3|4|1952|GREENLAND|59cfL9Fbpv|Barbara.Hoover@lawyer.com|vDVbSOCI
+
+== retail_project/data/customer_demographics/customer_demographics.dat
+0|F|U|Primary|6000|Good|0|5|0
+1|M|S|Primary|3500|Good|0|0|4
+2|M|W|Unknown|500|Good|0|0|3
+
+== retail_project/data/date_dim/date_dim.dat
+0|AAAAAAAAAAAAAAAA|1900-01-01|0|0|0|1900|1|1|1|1|1900|0|0|Monday|1900Q1|Y|N|N|2448812|2458802|2472542|2420941|N|N|N|N|N
+1|AAAAAAAAAAAAAAAB|1900-01-02|0|0|0|1900|2|1|2|1|1900|0|0|Tuesday|1900Q1|Y|N|N|2441612|2427135|2449909|2430434|N|N|N|N|N
+2|AAAAAAAAAAAAAAAC|1900-01-03|0|0|0|1900|3|1|3|1|1900|0|0|Wednesday|1900Q1|Y|N|N|2436156|2449280|2455660|2433174|N|N|N|N|N
+
+== retail_project/data/household_demographics/household_demographics.dat
+0|3|1001-5000|0|0
+1|12|5001-10000|1|2
+2|9|0-500|2|3
+
+== retail_project/data/income_band/income_band.dat
+0|1|10000
+1|10001|20000
+2|20001|30000
+
+== retail_project/data/inventory/inventory.dat
+36890|0|0|503
+36890|1|0|624
+36890|2|0|796
+
+== retail_project/data/item/item.dat
+0|AAAAAAAAAAAAAAAA|2000-01-14||quickly even dinos beneath the frays must have to boost boldly careful bold escapades: stealthily even forges over the dependencies integrate always past the quiet sly decoys-- notornis sol|72.29|64.96|3898712|71TS7NSbvH1YbdiQMG6ttBHKAljiNoIRB|1|Fan Shop|9|Sports & Out
+1|AAAAAAAAAAAAAAAB|2000-09-23||quietly quiet hockey players outside the furiously fluffy sauternes impress daringly silently quiet gifts? bold ruthless escapades run slyly epitaphs! warhorses of the carefull|95.67|30.57|2218494|qNBimHGBu763udH|4|New|3|Books|69|M0VWtUYYkxy6iEMa2XZOxQSCTxFrOqsXg|petit
+2|AAAAAAAAAAAAAAAC|2000-09-01||dogged dugouts need to maintain regularly in place of the furiously brave dinos! dugouts poach stealthily final escapades? sauternes will have to wake! tithes can use slowly until the frets. stea|62.74|47.70|6043423|ma5|3|Education & Reference|3|Books|831|SXEWAxq6kTcO8
+
+== retail_project/data/item_marketprices/item_marketprices_audit.csv
+
+maxItems,realMaxItems,numCompetitors,minComPerITem,maxComPerItem,avgComPerItem,itemsWithoutCompetitors,itemsNotHavingMinCompetitors
+18000,17819,89099,2,13,5.000224479488187,0,0
+
+== retail_project/data/item_marketprices/item_marketprices.dat
+0|5810|AAAAAAAAAAAAAANN|95.41|36890|38405
+1|12723|AAAAAAAAAAAAAABT|85.00|36890|36926
+2|1817|AAAAAAAAAAAAAAWZ|11.35|36890|38254
+
+== retail_project/data/product_reviews/product_reviews.dat
+0|2002-08-06|09:16:45|5|8612|20019|62441|Catch Without Arms, Zebraskin, Tanbark, Planting Seeds, and Hungover on Tuesday are awesome tooThe only song didn't love was Zebraskin, found interesting here are some unreleased instrumentals "Diamond Box" and "Hjelmar's" along with an amazing voice.Her seco
+1|2001-11-10|12:43:54|5|17358|21862|12592|Chrono Cross CDs. The Sound quality is grate, and as play the music is the &quot;Chrono Cross&quot; soundtrack. Spanning three discs worth of music, the soundtrack until now, reminiscing parts of the Chrono Trigger so many styles and he does all of those alb
+2|2003-07-11|09:49:24|4|1694|65345|51841|Thought the price $127.00, this is the weather. Do not fly in large gym or meeting hall, and an incredibly popular flyer for both cars and trains...It comes with three storage bins under the table, would have been easier if there was no damage.
+
+== retail_project/data/promotion/promotion.dat
+0|AAAAAAAAAAAAAAAA|61336|94523|14434|445.17|1|pri|Y|N|N|N|N|N|N|N|always bold warthogs despite the dugouts will play closely|Unknown|N
+1|AAAAAAAAAAAAAAAB|28694|61972|2219|926.61|1|cally|Y|N|N|Y|N|N|N|N|sentiments haggle courts; silent warhorses should poach of the dogged pinto beans. ironic|Unknown|N
+2|AAAAAAAAAAAAAAAC|66772|109558|558|220.37|1|eing|N|N|N|N|N|N|N|N|finally furious Tiresias' past the doggedly slow Tiresias' try to play up the |Unknown|N
+
+== retail_project/data/reason/reason.dat
+0|59h3KawhwK|slyly thin dugouts on the ironically enticing realms woul
+1|a6TzYqeb5XgwOe|epitaphs will have to affix stealthily even notornis! warhorses since the busy att
+2|R2PsDlX|excuses after the permanent courts try to was excuses? fluffy silent orbits d
+
+== retail_project/data_refresh/customer_address/customer_address.dat
+49500|AAAAAAAAAAAACVFW|575|Pine|Pkwy|JcbRPPJch|Decatur|Meade County|KS|70585|United States|-6|condo
+49501|AAAAAAAAAAAACVFX|29|Lakeview Ash|Boulevard|zNSxKw|Barnes|Kerr County|TX|86749|United States|-6|single family
+49502|AAAAAAAAAAAACVFY|115|8th 6th|Blvd|FEzf4gqvu|Millville|Lincoln County|MS|40558|United States|-6|condo
+
+== retail_project/data_refresh/customer/customer.dat
+99000|AAAAAAAAAAAAFQLS|1743789|2912|15817|12124|46820|Mr.|Michael|Broyles|N|30|8|1961|LATVIA|vtJOqYQQJ7|Michael.Broyles@peacemail.com|0ka0ymX
+99001|AAAAAAAAAAAAFQLT|987779|5060|31776|42067|99363|Mr.|Dennis|Tobin|N|22|4|1949|MAURITANIA|lnZ4|Dennis.Tobin@privacyharbor.com|ro7j4k
+99002|AAAAAAAAAAAAFQLU|1423325|5795|5270|73986|42194|Sir|Clifford|Rice|N|19|10|1940|LIECHTENSTEIN|R36tSZ|Clifford.Rice@gmx.us|dgHE
+
+== retail_project/data_refresh/inventory/inventory.dat
+38696|17100|1|24
+38696|17101|1|533
+38696|17102|1|771
+
+== retail_project/data_refresh/item/item.dat
+17820|AAAAAAAAAAAABAJK|2000-07-09||regular somas past the fluffy braids engage upon the thin idle decoys. forges play-- escapades might boost close final realms-- brave quiet grouches between the thin silent forges are a|74.53|47.52|3413837|FAmZ5OQp19b6YnHEIGowTI|10|Country|2|Music|91|7aJWxd7IChKqW4
+17821|AAAAAAAAAAAABAJL|2000-08-23||quiet idle hockey players would was. enticing frets should have to doze instructions. slowly blithe platelets from the furious warthogs poach blithely bravely sly sheaves: silently careful attai|73.48|27.02|2651798|FXTuGQ0Q|8|NO_SUB_CAT|4|Clothing & Accessories|96|
+17822|AAAAAAAAAAAABAJM|2000-02-03||busy warhorses between the regular notornis print quick multipliers! idly brave pains among the quickly slow warhorses sleep through the asymptotes. dugouts of the daring ironic esca|48.19|72.52|5204390|LsmOqdmIiRiZ2W0RTpp|9|Dolls & Accessories|7|Toys & Games|131|8
+
+== retail_project/data_refresh/item_marketprices/item_marketprices_audit.csv
+
+maxItems,realMaxItems,numCompetitors,minComPerITem,maxComPerItem,avgComPerItem,itemsWithoutCompetitors,itemsNotHavingMinCompetitors
+18000,17999,900,0,2,0.05000277793210734,17117,864
+
+== retail_project/data_refresh/item_marketprices/item_marketprices.dat
+89100|9103|AAAAAAAAAAAAABII|72.13|38697|38717
+89101|7178|AAAAAAAAAAAAAANI|55.66|38697|38714
+89102|11180|AAAAAAAAAAAAAAIM|63.78|38697|38701
+
+== retail_project/data_refresh/product_reviews/product_reviews.dat
+89991|2001-04-30|17:36:54|5|679|7611|55550|My acid reflux onset by my pregnancy.At first tried it and does prefer thicker, puffier pillows. She would probably give it only stars. This pillow is just wonderful! It is wonderful. wish would definitely recommend this product.
+89992|2005-12-30|04:15:38|5|17539|65150|5197|Mitch Farber is major step forward for the title of America's greatest living guitarist. It's silly, as all such titles are, but it is something of kind! If you don't like that well that the weblink mentioned earlier has changed to http://www.magicalmotio
+89993|2003-12-02|23:35:02|4|16971|66178|44842|Classic. Aaaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa awash applies to Christian attitudes today as well. AAAAAAAAAAAAAAA AAAAAAAAAA AAAAAAAAA. ....... Many should wear for hypocrite
+
+== retail_project/data_refresh/store_returns/store_returns.dat
+37587|32662|10095|1273|1878036|6392|38601|5|27|3483|17|151.64|13.65|165.29|73.86|392.93|122.83|17.86|10.95|420.23
+37587|21740|17866|1273|1878036|6392|38601|5|8|3483|8|695.92|62.63|758.55|13.76|639.77|563.70|81.98|50.24|765.03
+37587|6675|14049|1273|1878036|6392|38601|5|20|3483|51|2555.10|229.96|2785.06|26.66|3034.33|2069.63|300.99|184.48|3494.25
+
+== retail_project/data_refresh/store_sales/store_sales.dat
+38697|21281|12731|54531|1475324|178|47932|11|210|89100|52|49.36|60.22|24.09|1878.76|1252.68|2566.72|3131.44|19.92|588.76|663.92|683.84|-1902.80
+38697|21281|13894|54531|1475324|178|47932|11|39|89100|28|57.39|67.72|11.51|1573.88|322.28|1606.92|1896.16|19.34|0.00|322.28|341.62|-1284.64
+38697|21281|10166|54531|1475324|178|47932|11|217|89100|31|39.26|60.46|42.93|543.43|1330.83|1217.06|1874.26|19.96|665.42|665.41|685.37|-551.65
+
+== retail_project/data_refresh/web_clickstreams/web_clickstreams.dat
+38697|11222||9912|32|63997
+38697|17398||17495|39|63997
+38697|26083||5969|13|63997
+
+== retail_project/data_refresh/web_returns/web_returns.dat
+38953|75847|1898|77591|1380176|3351|40932|77591|1380176|3351|40932|42|22|85134|15|20.70|1.45|22.15|9.49|114.05|14.70|5.94|0.06|116.95
+37979|40451|8512|68574|946145|5540|49918|68574|946145|5540|49918|12|16|41905|5|365.65|25.60|391.25|83.73|343.50|208.42|34.59|122.64|394.70
+38266|84747|1379|68574|946145|5540|49918|68574|946145|5540|49918|4|5|41905|41|7523.91|526.67|8050.58|22.88|11106.51|4288.63|711.76|2523.52|12159.85
+
+== retail_project/data_refresh/web_sales/web_sales.dat
+38697|38598|38806|17861|95479|481076||14580|95479|481076||14580|58|22|4|1|118|89100|44|27.96|67.66|41.27|1161.16|1815.88|1230.24|2977.04|63.19|762.67|774.03|1053.21|1116.40|1827.24|1890.43|-177.03
+38697|38598|38784|17324|95479|481076||14580|95479|481076||14580|43|21|17|4|291|89100|62|12.89|17.27|8.64|535.06|535.68|799.18|1070.74|25.50|171.42|406.88|364.26|389.76|771.14|796.64|-434.92
+38697|38598|38767|9486|95479|481076||14580|95479|481076||14580|40|6|15|1|118|89100|77|10.84|30.68|26.38|331.10|2031.26|834.68|2362.36|81.25|0.00|732.33|2031.26|2112.51|2763.59|2844.84|1196.58
+
+== retail_project/data/ship_mode/ship_mode.dat
+0|GX9qF2bN|0k0a5LMf|9DPuF6E|JpQUqCDAHAO5n7I|86kCyujyVunz3EGDYCRE
+1|R2ZJblvMEkdCFd|slLBKEIcd4EKHkD75Lur3BMuGE1|rYlS|1jj19TXJSW9Z|pyYTsrgVFP9o
+2|XDKdzkNPYGJN|N6js2CKWyyaiYmSLNbxXCuhCgSF1ch|fzJFaL|1hoB|Xc6cFDMGQwqaCu
+
+== retail_project/data/store_returns/store_returns.dat
+38806|37121|15784|5206|647228|4483|7207|5|17|64537|9|142.38|2.85|145.23|39.94|554.44|101.09|8.26|33.03|560.14
+37388|1727|8140|60704|1478832|5094|30228|6|12|22850|43|5709.11|57.09|5766.20|11.34|5184.82|3025.83|939.15|1744.13|5299.00
+37388|26037|6639|60704|1478832|5094|30228|6|33|22850|2|71.44|0.71|72.15|72.68|80.49|37.86|11.75|21.83|81.91
+
+== retail_project/data/store_sales/store_sales.dat
+36890|71480|10001|44404|493944|2898|44093|10|294|0|31|18.00|30.78|23.08|238.70|715.48|558.00|954.18|21.46|0.00|715.48|736.94|157.48
+36890|71480|10000|44404|493944|2898|44093|10|279|0|54|99.21|148.82|83.34|3535.92|4500.36|5357.34|8036.28|225.02|0.00|4500.36|4725.38|-856.98
+36890|71480|15556|44404|493944|2898|44093|10|114|0|39|79.49|94.59|83.24|442.65|3246.36|3100.11|3689.01|184.07|616.81|2629.55|2813.62|-470.56
+
+== retail_project/data/store/store.dat
+0|AAAAAAAAAAAAAAAA|2000-08-02||71238|Forest|217|8891512|8AM-12AM|Joshua Watson|6|Unknown|realms sublate quickly outside the epitaphs; evenly silent patterns boost! th|Randy King|1|Unknown|1|Unknown|916|1st|Boulevard|XF|Post Oak|Hinsdale County|CO|47562|United States|-7|0.06
+1|AAAAAAAAAAAAAAAB|2000-07-03||18994|Hillside|244|8751339|8AM-4PM|Gary Gold|3|Unknown|close escapades across the carefully ironic grouches shall have to lose into the sauternes: sl|John Green|1|Unknown|1|Unknown|696|3rd 4th|Blvd|gcg5eGNxs|Jerusalem|Union County|TN|80145|United States|-6|0.03
+2|AAAAAAAAAAAAAAAC|2000-09-01||8900|Sherwood|266|5913334|8AM-4PM|James Anderson|6|Unknown|frays may kindle over the bold ironic epitaphs! slow quick multipliers maintain among t|Raymond Kitchens|1|Unknown|1|Unknown|293|Main Fourteenth|Ct.|8pCGst|Mount Vernon|Sierra County|CA|97832|United States|-8|0
+
+== retail_project/data/time_dim/time_dim.dat
+0|AAAAAAAAAAAAAAAA|0|0|0|0|AM|third|night|
+1|AAAAAAAAAAAAAAAB|1|0|0|1|AM|third|night|
+2|AAAAAAAAAAAAAAAC|2|0|0|2|AM|third|night|
+
+== retail_project/data/warehouse/warehouse.dat
+0|AAAAAAAAAAAAAAAA|somas between the ho|467315|738|Main Smith|Cir.|Y5|Bethel|Scott County|KY|52585|United States|-5
+1|AAAAAAAAAAAAAAAB|frets would sleep|845707|181|9th 13th|Court|kQ|Sherwood Forest|Teton County|WY|87891|United States|-7
+2|AAAAAAAAAAAAAAAC|asymptotes need to |838758|383|Cedar|Ave|Y1ZW3S|Dover|Rapides Parish|LA|56596|United States|-6
+
+== retail_project/data/web_clickstreams/web_clickstreams.dat
+36890|71470||4867|28|
+36890|27089||15465|47|
+36890|16847||3387|31|
+
+== retail_project/data/web_page/web_page.dat
+0|AAAAAAAAAAAAAAAA|2000-08-14||103908|107243|0|57966|http://www.jDgp6pYGC9UBr6t3N4eNKgz66QFWyeH1DvSTGhtMwDGoLjyzmdN4XfcfoEiNC.com|review|2405|10|7|3
+1|AAAAAAAAAAAAAAAB|2000-05-09||64910|70698|1|10896|http://www.bLfnpQIFymetyfbA.com|dynamic|2375|7|6|3
+2|AAAAAAAAAAAAAAAC|2000-09-19||86749|92079|0|55857|http://www.cyvdZ4SMAsNSrHJ0Zy4WuNiad.com|dynamic|5713|18|6|3
+
+== retail_project/data/web_returns/web_returns.dat
+38952|68126|9590|52948|893223|2020|6942|52948|893223|2020|6942|32|13|63444|33|626.01|25.04|651.05|18.74|958.40|244.14|286.40|95.47|1008.48
+38676|62386|16497|52948|893223|2020|6942|52948|893223|2020|6942|9|4|63444|34|455.26|18.21|473.47|60.18|572.10|177.55|208.28|69.43|608.52
+37971|57246|13482|43560|783322|3386|42669|43560|783322|3386|42669|35|4|20647|12|333.24|0.00|333.24|99.99|86.00|279.92|1.60|51.72|86.00
+
+== retail_project/data/web_sales/web_sales.dat
+36890|26789|36993|794|85457|380790|2436|42649|29934|1583844|5251|525|2|14|1|3|120|0|93|32.62|81.22|59.29|2039.49|5513.97|3033.66|7553.46|330.84|0.00|1661.76|5513.97|5844.81|7175.73|7506.57|2480.31
+36890|26789|36953|9897|85457|380790|2436|42649|29934|1583844|5251|525|46|28|17|2|282|0|60|20.14|31.62|25.30|379.20|1518.00|1208.40|1897.20|31.42|470.58|796.82|1047.42|1078.84|1844.24|1875.66|-160.98
+36890|26789|36906|3725|85457|380790|2436|42649|29934|1583844|5251|525|20|29|2|3|283|0|93|50.82|139.25|137.86|129.27|12820.98|4726.26|12950.25|0.00|0.00|129.50|12820.98|12820.98|12950.48|12950.48|8094.72
+
+== retail_project/data/web_site/web_site.dat
+0|AAAAAAAAAAAAAAAA|2002-01-03||site_0|12694|77464|Unknown|Robert Stewart|1|even ruthless multipliers should have to mai|ruthless bold notornis doubt: closely quiet hockey players behind the fluffily daring dec|James Feliciano|3|bar|625|1st|Lane|FGa6|Bolton|Cumberland County|NJ|68675|United States|-5
+1|AAAAAAAAAAAAAAAB|2001-01-27||site_0|89906|97612|Unknown|David Mcneil|6|enticing epitaphs without the ironic bold gifts c|closely careful forges lose sometimes pinto beans: quietly final dinos |Brandon Thomas|5|anti|175|Miller|Cir.|dsFlm0a9AH|Mechanicsville|Duval County|TX|20236|United States|-6|0.
+2|AAAAAAAAAAAAAAAC|2002-07-17||site_0|16450|91500|Unknown|Gregory George|1|sheaves despite the quietly sly asymp|thin enticing frets except the sometimes final courts might promise blithe dino|Frank Hernandez|1|ese|17|5th|Ave|EbDxJVL|Georgetown|Guadalupe County|TX|75435|United States|-6|0.01

@@ -1,0 +1,37 @@
+lot;table;domaine;chemin;format;taille_octets;taille_Mo;nb_lignes;nb_colonnes
+data;customer;Clients;retail_project/data/customer/customer.dat;texte délimité '|' sans en-tête, CRLF;13279063;13.28;99000;18
+data;customer_address;Clients;retail_project/data/customer_address/customer_address.dat;texte délimité '|' sans en-tête, CRLF;5387229;5.39;49500;13
+data;customer_demographics;Clients;retail_project/data/customer_demographics/customer_demographics.dat;texte délimité '|' sans en-tête, CRLF;77753083;77.75;1920800;9
+data;date_dim;Dates et temps;retail_project/data/date_dim/date_dim.dat;texte délimité '|' sans en-tête, CRLF;15395800;15.4;109573;28
+data;household_demographics;Clients;retail_project/data/household_demographics/household_demographics.dat;texte délimité '|' sans en-tête, CRLF;155100;0.16;7200;5
+data;income_band;Clients;retail_project/data/income_band/income_band.dat;texte délimité '|' sans en-tête, CRLF;327;0.0;20;3
+data;inventory;Stocks;retail_project/data/inventory/inventory.dat;texte délimité '|' sans en-tête, CRLF;424943678;424.94;23255100;4
+data;item;Produits;retail_project/data/item/item.dat;texte délimité '|' sans en-tête, CRLF;6799286;6.8;17820;22
+data;item_marketprices;Produits (prix concurrents);retail_project/data/item_marketprices/item_marketprices.dat;texte délimité '|' sans en-tête, CRLF;4201170;4.2;89100;6
+data;product_reviews;Avis produits;retail_project/data/product_reviews/product_reviews.dat;texte délimité '|' sans en-tête, CRLF;56355389;56.36;89991;8
+data;promotion;Promotions;retail_project/data/promotion/promotion.dat;texte délimité '|' sans en-tête, CRLF;46396;0.05;300;19
+data;reason;Référentiel (motifs);retail_project/data/reason/reason.dat;texte délimité '|' sans en-tête, CRLF;3105;0.0;35;3
+data;ship_mode;Référentiel (livraison);retail_project/data/ship_mode/ship_mode.dat;texte délimité '|' sans en-tête, CRLF;1220;0.0;20;6
+data;store;Magasins;retail_project/data/store/store.dat;texte délimité '|' sans en-tête, CRLF;3386;0.0;12;29
+data;store_returns;Retours;retail_project/data/store_returns/store_returns.dat;texte délimité '|' sans en-tête, CRLF;4337400;4.34;37902;20
+data;store_sales;Ventes magasin;retail_project/data/store_sales/store_sales.dat;texte délimité '|' sans en-tête, CRLF;92764700;92.76;667579;23
+data;time_dim;Dates et temps;retail_project/data/time_dim/time_dim.dat;texte délimité '|' sans en-tête, CRLF;5107780;5.11;86400;10
+data;warehouse;Entrepôts;retail_project/data/warehouse/warehouse.dat;texte délimité '|' sans en-tête, CRLF;584;0.0;5;14
+data;web_clickstreams;Navigation;retail_project/data/web_clickstreams/web_clickstreams.dat;texte délimité '|' sans en-tête, CRLF;178722140;178.72;6770550;6
+data;web_page;Navigation;retail_project/data/web_page/web_page.dat;texte délimité '|' sans en-tête, CRLF;8040;0.01;60;14
+data;web_returns;Retours;retail_project/data/web_returns/web_returns.dat;texte délimité '|' sans en-tête, CRLF;5383513;5.38;38487;24
+data;web_sales;Ventes web;retail_project/data/web_sales/web_sales.dat;texte délimité '|' sans en-tête, CRLF;133790574;133.79;668052;34
+data;web_site;Navigation;retail_project/data/web_site/web_site.dat;texte délimité '|' sans en-tête, CRLF;8838;0.01;30;26
+data_refresh;customer;Clients;retail_project/data_refresh/customer/customer.dat;texte délimité '|' sans en-tête, CRLF;134360;0.13;1000;18
+data_refresh;customer_address;Clients;retail_project/data_refresh/customer_address/customer_address.dat;texte délimité '|' sans en-tête, CRLF;54587;0.05;500;13
+data_refresh;inventory;Stocks;retail_project/data_refresh/inventory/inventory.dat;texte délimité '|' sans en-tête, CRLF;4292915;4.29;234900;4
+data_refresh;item;Produits;retail_project/data_refresh/item/item.dat;texte délimité '|' sans en-tête, CRLF;69173;0.07;180;22
+data_refresh;item_marketprices;Produits (prix concurrents);retail_project/data_refresh/item_marketprices/item_marketprices.dat;texte délimité '|' sans en-tête, CRLF;42547;0.04;900;6
+data_refresh;product_reviews;Avis produits;retail_project/data_refresh/product_reviews/product_reviews.dat;texte délimité '|' sans en-tête, CRLF;573685;0.57;909;8
+data_refresh;store_returns;Retours;retail_project/data_refresh/store_returns/store_returns.dat;texte délimité '|' sans en-tête, CRLF;48825;0.05;426;20
+data_refresh;store_sales;Ventes magasin;retail_project/data_refresh/store_sales/store_sales.dat;texte délimité '|' sans en-tête, CRLF;922171;0.92;6632;23
+data_refresh;web_clickstreams;Navigation;retail_project/data_refresh/web_clickstreams/web_clickstreams.dat;texte délimité '|' sans en-tête, CRLF;1821864;1.82;68988;6
+data_refresh;web_returns;Retours;retail_project/data_refresh/web_returns/web_returns.dat;texte délimité '|' sans en-tête, CRLF;55952;0.06;400;24
+data_refresh;web_sales;Ventes web;retail_project/data_refresh/web_sales/web_sales.dat;texte délimité '|' sans en-tête, CRLF;1378425;1.38;6879;34
+data;item_marketprices_audit;Métadonnées de génération;retail_project/data/item_marketprices/item_marketprices_audit.csv;CSV ',' avec en-tête (rapport texte);273;0.0;5;8
+data_refresh;item_marketprices_audit;Métadonnées de génération;retail_project/data_refresh/item_marketprices/item_marketprices_audit.csv;CSV ',' avec en-tête (rapport texte);151009;0.15;17986;8

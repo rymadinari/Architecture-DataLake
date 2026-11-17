@@ -1,0 +1,40 @@
+@page { size: A4; margin: 16mm 14mm 16mm 14mm; }
+body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 9.6pt; color: #1d2733; line-height: 1.42; }
+header.run { font-size: 7.5pt; color: #6b7785; border-bottom: 1px solid #c9d2dc; padding-bottom: 3px; margin-bottom: 14px; }
+h1 { font-size: 18pt; color: #17324d; margin: 0 0 4px 0; }
+h1 + p { color: #4a5868; margin-top: 0; }
+h2 { font-size: 12.5pt; color: #17324d; border-bottom: 1px solid #9aa7b4; padding-bottom: 2px; margin-top: 20px; page-break-after: avoid; }
+h3 { font-size: 10.5pt; color: #1f6f8a; margin-top: 14px; page-break-after: avoid; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 10px 0; font-size: 8.3pt; page-break-inside: auto; }
+tr { page-break-inside: avoid; }
+th { background: #e9edf1; color: #1d2733; text-align: left; padding: 4px 5px; font-weight: 600; }
+td { border-bottom: 1px solid #d6dde5; padding: 3px 5px; vertical-align: top; }
+
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.2pt; background: #eef2f5; padding: 0 2px; border-radius: 2px; }
+pre { background: #f2f5f8; border: 1px solid #d6dde5; padding: 6px 8px; font-size: 7.8pt; overflow: hidden; white-space: pre-wrap; }
+pre code { background: none; }
+blockquote { margin: 8px 0; padding: 0; border: none; background: none; color: inherit; }
+.note { margin: 8px 0; }
+.s { font-weight: 600; white-space: nowrap; }
+.v { }     /* Vérifié */
+.d { }     /* Déduit */
+.h { }     /* Hypothèse */
+.n { }     /* Non disponible */
+.a { }     /* À valider */
+.pb { page-break-before: always; }
+
+/* Diagrammes en HTML/CSS */
+.diag { display: flex; gap: 6px; align-items: stretch; margin: 10px 0; page-break-inside: avoid; }
+.diag .col { flex: 1; display: flex; flex-direction: column; gap: 5px; }
+.diag .col > .t { font-weight: 700; font-size: 8pt; color: #fff; background: #17324d; padding: 3px 5px; border-radius: 3px; text-align: center; }
+.diag .box { border: 1.5px solid #17324d; border-radius: 4px; padding: 4px 5px; font-size: 7.6pt; background: #fff; }
+.diag .box b { display: block; font-size: 8pt; }
+.diag .box.ok { border-color: #1c6b2a; background: #eff9f0; }
+.diag .box.wish { border-style: dashed; border-color: #9a2020; background: #fdf3f3; }
+.diag .box.part { border-color: #b75f00; background: #fff7ea; }
+.diag .arrow { align-self: center; font-size: 16pt; color: #1f8a8a; flex: 0 0 auto; }
+.bronze { background: #f4e3d3 !important; border-color: #9c5a1c !important; }
+.silver { background: #eceff2 !important; border-color: #6b7785 !important; }
+.gold { background: #fbf0c8 !important; border-color: #a07d00 !important; }
+.band { border: 1.5px dashed #6b7785; border-radius: 4px; padding: 4px 8px; font-size: 7.8pt; background: #f7f9fb; margin-top: 4px; page-break-inside: avoid; }
+.legend { font-size: 7.6pt; color: #4a5868; }
