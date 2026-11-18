@@ -1,0 +1,49 @@
+jeu;controle;regle;resultat;statut
+silver/sales;Complétude;ss_sold_date_sk non nul;0;OK
+silver/sales;Complétude;ss_item_sk non nul;0;OK
+silver/sales;Complétude;ss_store_sk non nul;0;OK
+silver/sales;Complétude;ss_ticket_number non nul;0;OK
+silver/sales;Complétude;ss_quantity non nul;0;OK
+silver/sales;Complétude;ss_sales_price non nul;0;OK
+silver/sales;Complétude;ss_net_paid non nul;0;OK
+silver/products;Complétude;i_item_sk non nul;0;OK
+silver/products;Complétude;i_category non nul;0;OK
+silver/stores;Complétude;s_store_sk non nul;0;OK
+silver/stores;Complétude;s_store_name non nul;0;OK
+silver/dates;Complétude;d_date_sk non nul;0;OK
+silver/dates;Complétude;d_date non nul;0;OK
+silver/dates;Complétude;d_year non nul;0;OK
+silver/dates;Complétude;d_moy non nul;0;OK
+silver/sales;Complétude;ss_promo_sk (facultatif) rempli;158 vides (0.02 %);ATTENTION
+silver/sales;Complétude;ss_addr_sk (facultatif) rempli;448 vides (0.07 %);ATTENTION
+silver/sales;Complétude;ss_cdemo_sk (facultatif) rempli;238 vides (0.04 %);ATTENTION
+silver/sales;Complétude;ss_hdemo_sk (facultatif) rempli;295 vides (0.04 %);ATTENTION
+silver/products;Unicité;i_item_sk unique;0;OK
+silver/stores;Unicité;s_store_sk unique;0;OK
+silver/dates;Unicité;d_date_sk unique;0;OK
+silver/sales;Unicité;aucune ligne totalement identique;0;OK
+silver/sales;Clé candidate;(ticket, produit) unique;4136;ATTENTION
+silver/sales;Validité;types conformes à config.py;0 colonne(s) différente(s);OK
+silver/products;Validité;types conformes à config.py;0 colonne(s) différente(s);OK
+silver/stores;Validité;types conformes à config.py;0 colonne(s) différente(s);OK
+silver/dates;Validité;types conformes à config.py;0 colonne(s) différente(s);OK
+silver/sales;Cohérence;quantité entre 1 et 100;0 ligne(s) en erreur;OK
+silver/sales;Cohérence;montant payé >= 0;0 ligne(s) en erreur;OK
+silver/sales;Cohérence;prix de vente <= prix catalogue;0 ligne(s) en erreur;OK
+silver/sales;Cohérence;montant brut = quantité x prix;0 ligne(s) en erreur;OK
+silver/sales;Cohérence;net payé = montant brut - coupon;0 ligne(s) en erreur;OK
+silver/sales;Cohérence;ventes entre 2001 et 2005;2001-01-01 -> 2005-12-13;OK
+silver/sales;Cohérence;marge positive;495971 marges négatives (74 %);ATTENTION
+silver/sales;Volume;lignes Silver = lignes brutes;667579 / 667579;OK
+silver/products;Volume;lignes Silver = lignes brutes;17820 / 17820;OK
+silver/stores;Volume;lignes Silver = lignes brutes;12 / 12;OK
+silver/dates;Volume;lignes Silver = lignes brutes;109573 / 109573;OK
+silver/sales;Intégrité;ss_item_sk existe dans products;0 orphelin(s);OK
+silver/sales;Intégrité;ss_store_sk existe dans stores;0 orphelin(s);OK
+silver/sales;Intégrité;ss_sold_date_sk existe dans dates;0 orphelin(s);OK
+gold/ventes_magasin_mois;Cohérence;CA total = CA Silver;1150529586.37 / 1150529586.37;OK
+gold/ventes_categorie_annee;Cohérence;CA total = CA Silver;1150529586.37 / 1150529586.37;OK
+gold/ventes_magasin_mois;Volume;12 magasins x 60 mois = 720 lignes;720;OK
+gold/ventes_magasin_mois;Unicité;(magasin, année, mois) unique;0;OK
+gold/ventes_categorie_annee;Unicité;(catégorie, année) unique;0;OK
+gold/ventes_categorie_annee;Cohérence;parts de CA = 100 % par année;0 année(s) en erreur;OK
