@@ -1,0 +1,10 @@
+code,kpi,valeur,unite,perimetre
+K1,Chiffre d'affaires net,1150529586.37,unité monétaire (devise non précisée),ventes magasin 2001-01-01 -> 2005-12-13
+K2,Nombre de transactions,89100.0,tickets,idem
+K3,Panier moyen,12912.79,unité monétaire par ticket,idem
+K4,Quantités vendues,33755474.0,unités,idem
+K7,Évolution du CA 2002 vs 2001 (01/01-13/12),-0.75,%,période identique
+K7,Évolution du CA 2003 vs 2002 (01/01-13/12),1.11,%,période identique
+K7,Évolution du CA 2004 vs 2003 (01/01-13/12),0.18,%,période identique
+K7,Évolution du CA 2005 vs 2004 (01/01-13/12),-1.53,%,période identique
+K11,CA par employé (moyenne des 12 magasins),407391.7,unité monétaire par employé,sur 5 ans

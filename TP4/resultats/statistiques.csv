@@ -1,0 +1,7 @@
+granularite,variable,nb,min,max,moyenne,mediane,ecart_type,somme
+ligne de ticket,ss_quantity,667579,1,100,50.56,51,28.88,33755474
+ligne de ticket,ss_sales_price,667579,0.00,199.30,37.86,27.69,34.4,
+ligne de ticket,ss_net_paid,667579,0.00,18745.00,1723.44,878.41,2167.9,1150529586.37
+ticket,montant_ticket,89100,0.00,64785.95,12912.79,11640.86,9063.74,1150529586.37
+ticket,nb_lignes_ticket,89100,1,14,7.49,7,4.02,667579
+ticket,quantite_ticket,89100,1,1143,378.85,372,217.36,33755474
